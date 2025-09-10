@@ -1,0 +1,8 @@
+Permanent installation (subscription required)
+
+To install .xpi as a regular extension, it must be signed through Mozilla Add-ons (AMO):
+
+1. Register an account at addons.mozilla.org
+2. Download the ZIP/XPI archive.
+3. Mozilla will check and issue a signed .xpi.
+4. After that, the file can be installed without errors.
