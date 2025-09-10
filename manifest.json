@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "VirusTotal Link Checker",
+  "version": "1.0.5",
+  "description": "Checks URLs in VirusTotal via the context menu of links. Popup near the cursor with a spinner and a colored badge.",
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "activeTab",
+    "notifications",
+    "https://www.virustotal.com/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/vtlc-16.png",
+    "32": "icons/vtlc-32.png",
+    "48": "icons/vtlc-48.png",
+    "128": "icons/vtlc-128.png"
+  }
+}
